@@ -1,0 +1,71 @@
+/* Reset Css */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Chú ý khi làm
+1Làm từ trên xuống dưới
+2,Làm từ ngoai vào trong,
+3.Tổng quan đên chi tiết 
+
+*/
+/* 
+Trả lời các câu hỏi trước khi chuẩn bị viết Code
+1.Vị trí
+2.Kích thướng
+3.Màu sắc
+3.Kiểu dáng (kiêu chữ, hình tròn vuông/...
+ */
+ #header{
+     height: 46px;
+     background-color: #000;
+ }
+ #nav, .subnav{
+     list-style-type: none;
+ }
+#nav li{
+    display: inline-block;
+    position: relative;
+}
+
+#nav>li>a{
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+#nav >li:hover >a,#nav .subnav li:hover { 
+    color: #000;
+    background-color: #ccc;
+ 
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav{
+display: none; 
+min-width: 160px;
+top: 100%;
+position: absolute;
+background-color: #fff;
+box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+}
+#nav .subnav li{
+    width: 100%;
+    line-height: 36px;
+    padding: 8px 16px;
+    
+}
+#nav
+#carosel{
+    height: 500px;
+    background-color: #ccc;
+}
