@@ -14,6 +14,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    
     <title>W3_THEBAND</title>
 </head>
 <body>
@@ -21,19 +23,19 @@
         <div id="header">
             <!-- Begin:Nav -->
         <ul id="nav">
-            <li><a href="">HOME</a></li>
-            <li><a href="">BAND</a></li>
-            <li><a href="">TOUR</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#band">BAND</a></li>
+            <li><a href="#tour">TOUR</a></li>
+            <li><a href="#contact">CONTACT</a></li>
             <li>
-                <a href="">
+                <a href="#">
                     MORE
                   <i class="icon-down ti-angle-down"></i>
                 </a>
                 <ul class ="subnav">
-                    <li><a href=""></a>Merchandise</li>
-                    <li><a href=""></a>Extras</li>
-                    <li><a href=""></a>Media</li>
+                    <li><a href="#"></a>Merchandise</li>
+                    <li><a href="#"></a>Extras</li>
+                    <li><a href="#"></a>Media</li>
                 </ul>
             </li>
         </ul>
@@ -42,8 +44,11 @@
         <div class="search-btn">
             <i class="search-btn-icon ti-search"></i>
         </div>
-        <!-- End:Seach btn -->
+        <div id="menu-ti" class="mobi-menu-btn">
+            <i class="ti-menu"></i>
         </div>
+        <!-- End:Seach btn -->
+        </div>  
 
         <div id="slider">
             <div class="text-content">
@@ -58,7 +63,7 @@
 
 
             <!-- About-section -->
-            <div class="content-heading">
+            <div id="band" class="content-heading ">
                 <h2 class="section-heading">The Band</h2>
                 <p class="section-sub-heading"> We love Young</p>
                 <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -76,10 +81,11 @@
                         <img src="/assets/img/list-name/3.jfif" alt="name" class="member-img">
                     </div>
                   </div>
-                  <div class="clear"></div>
+                 
+
             </div>
              <!-- Tour-section -->
-             <div class="tour-selection">
+             <div id="tour" class="tour-selection">
                  <div class="content-heading ">
                     <h2 class="section-heading text-white">TOUR DATES</h2>
                     <p class="section-sub-heading text-white">Remember to book your tickets!</p>
@@ -90,80 +96,94 @@
                     </ul>
                     <!-- Place -->
                     <div class="row place-list">
-                        <div class="col col-3">
+                        <div class="col col-3 mt-16">
                             <img src="/assets/img/tour-img/newyork.jpg" alt="" class="place-img">
                             <div class="place-how">
                                 <h3 class="place-heading">New York</h3>
                             <p class="place-time">Fri 27 Nov 2016</p>
                             <p class="place-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button href="" class="place-buy js-buy-tickets ">Buy Tickets</button>
+                            <button href="" class="btn js-buy-tickets s-full-width">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="col col-3">
+                        <div class="col col-3 mt-16">
                             <img src="/assets/img/tour-img/paris.jpg" alt="" class="place-img">
                            <div class="place-how">
                             <h3 class="place-heading">Paris</h3>
                             <p class="place-time">Sat 28 Nov 2016</p>
                             <p class="place-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button href="" class="place-buy js-buy-tickets">Buy Tickets</button>
+                            <button href="" class="btn js-buy-tickets s-full-width">Buy Tickets</button>
                            </div>
                         </div>
-                        <div class="col col-3">
+                        <div class="col col-3 mt-16">
                             <img src="/assets/img/tour-img/sanfran.jpg" alt="" class="place-img">
                             <div class="place-how">
                                 <h3 class="place-heading">San Francisco</h3>
                             <p class="place-time">Sun 29 Nov 2016</p>
                             <p class="place-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button href="" class="place-buy js-buy-tickets">Buy Tickets</button>
+                            <button href="" class="btn js-buy-tickets s-full-width">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="clear"></div>
+                      
                 </div>
                
              </div>
              </div>
-            <!-- Contact-section -->
-            <div class="content-heading">
+            <!-- Begin:Contact-section -->
+            <div id="contact" class="content-heading">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading"> Fan? Drop a note!</p>
                 <div class="row contact-section">
                     <div class="col col-2 contact-infor">
                         <p><i class="ti-location-pin"> Chicago, US</i></p>
-                        <p><i class="ti-mobile">  Phone: +00 151515</i></p>
+                        <p><i class="ti-mobile"> Phone: +00 151515</i></p>
                         <p><i class="ti-email"> Email: mail@mail.com</i></p>
                     
                     </div>
-                    <div class="col col-2">
+                    <div class="col col-2 contact-form">
                         <form action="">
                             <div class="row ">
                                 <div class="col col-2">
-                                    <input type="text" name="" id="" placeholder="Name" class="form-control">
+                                    <input type="text" name="" id="" placeholder="Name" required class="form-control">
                                 </div>
                                 <div class="col col-2">
-                                    <input type="email" name="" id="" placeholder="Email" class="form-control">
+                                    <input type="email" name="" id="" placeholder="Email" required class="form-control">
                                 </div>
                                
                             </div>
-                            <div class="row">
+                            <div class="row mt-8">
                                 <div class="col col-full">
-                                    <input type="text" name="" id="" placeholder="Massage" class="form-control">
+                                    <input type="text" name="" id="" placeholder="Massage" required class="form-control">
                                 </div>
                             </div>
-                            <input type="submit" value="SEND">
+                            <input class="btn pull-right mt-16 s-full-width" type="submit" value="SEND">
                         </form>
                     </div>
                 </div>
                 
             </div>
+            <!-- End:Contact-section --> 
+            <div class="map-section">
+                <img src="/assets/img/img-map/song-han-166796.jpg" alt="">
+            </div>
         </div>
         
 
     
-        <div id="footder"></div>
+        <div id="footder">
+            <div class="social-list">
+                <a href="" class="list-menu"><i class="ti-facebook"></i></a>
+                <a href="" class="list-menu"><i class="ti-instagram"></i></a>
+                <a href="" class="list-menu"><i class="ti-youtube"></i></a>
+                <a href="" class="list-menu"><i class="ti-pinterest"></i></a>
+                <a href="" class="list-menu"><i class="ti-twitter-alt"></i></a>
+                <a href="" class="list-menu"><i class="ti-linkedin"></i></a>
+            </div>
+            <p>Powered by <a href="">w3.css</a></p>
+        </div>
 
     
     </div>
-    <div id="moder">
+    <div id="moder" class="js-model">
         <div class="moder-container js-model-container">
             <div class="model-close js-model-close">
                 <i class="ti-close"></i>
@@ -185,7 +205,7 @@
                     Sent to
                 </label>
                 <input type="email" name="" id="email" class="moder-input" placeholder="Enter email...">
-                <button class="buy-tickets">Pay
+                <button class="buy-tickets ">Pay
                     <i class="ti-check"></i>
                 </button>
             </div>
@@ -193,31 +213,8 @@
             
             <p class="model-help">Need <a href="" style="color: #2196F3;">help?</a></p>
         </div>
+      
     </div>
-    <script>
-const buyBtns = document.querySelectorAll(".js-buy-tickets")
-const model = document.querySelector('#moder')
-const modelCotainer = document.querySelector(".js-model-container")
-const modelClose = document.querySelector(".js-model-close")
-//ham hien thi menu(them class open vao model)
-function showBuytickets(){
-    model.classList.add("open")
-}
-// ham dong menu (xoa bo class open khoi model)
-function closeBuytickets(){
-    model.classList.remove("open")
-}
-//thuc hien vong lap the button va nghe hanh vi click
-for (const buyBtn of buyBtns){
-        buyBtn.addEventListener("click",showBuytickets)
-    }
-    // thuc hien hanh vi click vao nut close
-    modelClose.addEventListener("click",closeBuytickets)
-    model.addEventListener("click", closeBuytickets)
-    modelCotainer.addEventListener("click", function(event){
-        event.stopPropagation()
-    })
-</script>
-
+<script src="/main.js"></script>
 </body>
 </html>

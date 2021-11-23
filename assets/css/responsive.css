@@ -1,0 +1,63 @@
+/* PC */
+@media (min-width:1024px) {
+    
+}
+@media(max-width:1024px) {
+.btn{
+    padding: 15px 16px;
+}
+a.list-menu {
+   margin: 0 8px;
+
+}
+#footder .p{
+    padding: 12px 0;
+    display:inline-block;
+}
+
+}
+
+/* Tablet */
+@media (min-width:740px) and (max-width:1024px) {
+    
+}
+/* Mobile */
+@media(max-width:740px){
+    .s-full-width{
+        width: 100%;
+    }
+    #nav{
+        display: block;
+    }
+    #nav li{
+        display: block;
+    }
+    #nav >li:first-child{
+        display: inline-block;
+    }
+    #header{
+        overflow: hidden;
+    }
+    #header .search-btn{
+        display: none;
+    }
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
+        color: #fff;
+        
+    }
+   
+    #nav .subnav{
+        margin:  5px 41px;
+    }
+    #header .mobi-menu-btn{
+    display: block;
+    }
+    #content .col{
+        margin-top: 30px;
+        width: 100%;
+    }
+
+
+}

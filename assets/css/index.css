@@ -5,7 +5,9 @@
     box-sizing: border-box;
 }
 html{
-    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+ font-family: 'Lato', sans-serif;
+
 }
 /* Chú ý khi làm
 1Làm từ trên xuống dưới
@@ -20,12 +22,82 @@ Trả lời các câu hỏi trước khi chuẩn bị viết Code
 3.Màu sắc
 3.Kiểu dáng (kiêu chữ, hình tròn vuông/...
  */
+ /* cmt */
+ .clear{
+    clear: both;
+}
+.text-white{
+    color:#fff !important;
+}
+
+.row{
+margin-left: -8px;
+margin-right: -8px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-3{
+    width: 33.333%;
+}
+.col-2{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+.text-center{
+    text-align: center !important;
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px !important;
+}
+.pull-right{
+    float: right !important;
+}
+.btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 10px 17px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+.btn:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+/* Main */
+
  #header{
      height: 46px;
      background-color: #000;
+     position:fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     z-index: 1;
+   
  }
+
+
  #nav, .subnav{
      list-style-type: none;
+ }
+ #nav{
+     display: inline-block;
  }
 #nav li{
     display: inline-block;
@@ -64,8 +136,312 @@ box-shadow: 0 0 10px rgba(0,0,0, 0.3);
     padding: 8px 16px;
     
 }
-#nav
-#carosel{
-    height: 500px;
-    background-color: #ccc;
+#header .mobi-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#header .mobi-menu-btn,
+#header .search-btn{
+float: right;
+padding: 0 21px;
+
+}
+#header .mobi-menu-btn:hover{
+   background-color: #ccc;
+}
+#header .search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+#header .ti-menu,
+#header .search-btn-icon{
+color: #fff;
+font-size: 20px;
+line-height: 46px;
+}
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(/assets/img/img-slider/hinh-anh-blackpink-0-1.jpg) top center /cover no-repeat;
+
+}
+#slider .text-content{
+    position: absolute;
+    bottom: 47px;
+    /* width: 100%;*/
+    text-align: center; 
+    /* left: 50%;
+    transform: translateX(-50%); */
+    right: 0;
+    left: 0;
+    color: #fff;
+}
+#slider .text-heading{
+    font-weight: 600;
+    font-size: 24px;
+
+}
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 15px;
+    font-style: italic;
+    font-weight: 500;
+
+}
+/* Content----------------- */
+
+#content .content-heading{
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 0 112px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 4px;
+
+}
+#content .section-sub-heading{
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+#content .about-text{
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+    /* Khoang canh hang tren hang duoi */
+}
+#content .member-item{
+    margin: 48px 0;
+    overflow: hidden;
+    
+}
+#content .member-name{
+    font-size: 15px;
+   
+    font-weight: bold;
+    text-transform: uppercase;
+ 
+}
+#content .member-img{
+    max-width: 100%;
+    margin-top: 15px;
+    width: 200px;
+    border-radius: 4px;
+}
+/* Tour-selection */
+.tour-selection{
+    background-color: #000;
+    
+}
+#content .tickets-tour{
+    background-color: #fff;
+    margin-top: 40px;
+    
+}
+#content .tickets-tour li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+    list-style: none;
+
+}
+#content .sold-out{
+    background-color: red;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #fff;
+    margin-left: 16px;
+}
+#content .quantity{
+    width: 24px;
+    height: 24px;
+    float: right;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+}
+#content .place-list{
+margin-top: 32px;
+}
+#content .place-img{
+width: 100%;
+display: block;
+}
+#content .place-img:hover{
+    opacity: 0.6;
+}
+#content .place-how{
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+#content .place-heading{
+    font-size: 15px;
+    font-weight: 600;
+
+}
+#content .place-time{
+margin-top: 15px;
+}
+#content .place-text{
+margin-top: 15px;
+}
+/* ConTact-setion */
+#content .content-heading{  
+}
+
+/* Moder */
+#moder{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.js-model .open{
+    display: flex;
+}
+#moder .moder-container{
+    background-color: #fff;
+    position: relative;
+    width: 900px;
+    min-height: 200px;
+    max-width: calc(100% - 32px);
+    animation: modalFaceIn ease .5s;
+}
+
+#moder .model-header{
+   
+    background-color: #009688;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+    height: 130px;
+
+}
+.model-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.model-close:hover{
+    opacity: 1;
+}
+.moder-body {
+    padding: 16px;
+}
+.moder-lable {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+    
+}
+#moder .moder-input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+}
+.buy-tickets {
+    padding: 15px;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: #009688;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    margin-top: 25px;
+}
+.buy-tickets:hover{
+    opacity: 0.8;
+}
+.model-help {
+    text-align: right;
+    padding: 16px;
+}
+/* Contact form */
+.contact-section{
+    margin-top: 48px;
+}
+.contact-infor{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-infor  i[class*="ti-"]{
+    width: 30px;
+
+}
+.form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.contact-form .form-summit-btn{
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 10px 16px;
+    float: right;
+}
+.map-section img{
+width: 100%;
+}
+#footder{
+    padding: 64px 16px;
+   text-align: center;
+
+}   
+#footder .social-list{
+    font-size: 24px;
+    
+}
+#footder .social-list a{
+    text-decoration: none;
+    color: rgba(0,0,0, 0.6);
+}
+#footder .social-lista:hover{
+    color: rgba(0,0,0, 0.3);
+}
+#footder p{
+    color: rgba(0,0,0, 0.6);
+    margin-top: 15px;
+}
+@keyframes modalFaceIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
